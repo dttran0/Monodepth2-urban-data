@@ -1,0 +1,16 @@
+python train.py --data_path C:/Users/trand/monodepth2/panda_training_data --model_name resnet18 --split panda_split --num_layers 18 --dataset panda --height 960 --width 1280 --batch_size 16 --num_epochs 30 --png
+
+in barns for kitti
+
+/scratch/dtran2/monodepth2/kitti_data
+
+
+
+python train.py --data_path C:/Users/trand/monodepth2/panda_training --model_name mono_resnet50_640x192 --split panda_split --num_layers 50 --dataset panda --height 960 --width 1280 --batch_size 1 --num_epochs 5 --png --num_workers 1 --load_weights_folder ~/tmp/mono_resnet50_640x192/models/weights_1
+
+
+python train.py --data_path ~/monodepth2/panda_training_dataset --model_name model_640x192 --split panda_split --dataset panda --width 384 --height 192 --batch_size 1  --num_epochs 5 --png --num_workers 1 --load_weights_folder ~/tmp/model_640x192/models/weights_5
+
+python train.py --data_path ~/monodepth2/panda_training_dataset --model_name mdp_18 --num_layers 18 --split panda_split --dataset panda --width 384 --height 192 --batch_size 1 --num_epochs 5 --png --num_workers 1
+
+tensorboard --logdir=~/tmp
