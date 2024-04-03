@@ -6,7 +6,6 @@ During the finetuning process, we utilized the focus upon two encoder ResNet-18 
 
 Training of Monodepth
 
-![Alt text](C:/Users/trand/OneDrive/Pictures/Ảnh chụp màn hình/monodepth-2.png?raw=true "Urban Image Dataset")
 
 
 ## 👩‍⚖️ License
